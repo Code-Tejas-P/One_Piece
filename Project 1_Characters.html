@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>One Piece Characters</title>
+        <link rel="stylesheet" href="Project 1.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <header class="Home"><h1 class="Home">One Piece</h1></header>
+                <nav id="home">
+                    <ul >
+                        <li><a href="Project 1_Home.html" class="button">Home</a></li>
+                        <li ><a href="Project 1_About.html" class="button">About</a></li>
+                        <li ><a href="Project 1_Characters.html"class="button">Characters</a></li>
+                        <li ><a href="Project 1_Author.html"class="button">Author</a></li>
+                        <li ><a href="Project 1_Music.html"class="button">Music/Video</a></li>
+                        <li ><a href="Project 1_Image.html"class="button">Image Gallery</a><li>
+                        <li><a href="Project 1_Stores.html"class="button">Stores</a></li>
+                </ul>
+            </nav>
+            <style>
+
+.popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:brown;
+                opacity: 1;
+            z-index: 999;
+            
+        }
+
+        /* Styles for the image container in the pop-up */
+        .popup-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            position: fixed;
+            top: 150;
+            left: 350;
+            max-width: 800px;
+            margin: 0 auto;
+            background: antiquewhite;
+            opacity: 1;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styles for individual images */
+        .gallery-image {
+            padding: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            max-width: 100%;
+        }
+
+        /* Hover effect for images */
+        .gallery-image:hover {
+            transform: scale(1.1);
+        }
+        .gallery-image{
+            height: 300px;
+            width: 200px;
+        }
+        ul{
+            list-style: none;
+        }
+        figcaption{
+            text-align: left;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+            </style>
+            <main id = "content">
+                <p><strong style="font-size: 50px;">Characters</strong>
+                <div class="gallery">
+                    <img class="gallery-image" src="luffy- wp.jpg" alt="Image 1" onclick="showPopup(1)">
+                    <img class="gallery-image" src="Roronoa Zoro.jpg" alt="Image 2" onclick="showPopup(2)">
+                    <img class="gallery-image" src="God Usopp.jpg" alt="Image 3" onclick="showPopup(3)">
+                    <img class="gallery-image" src="Vinsmoke Sanji.jpg" alt="Image 4" onclick="showPopup(4)">
+                    <img class="gallery-image" src="Nami.jpg" alt="Image 5" onclick="showPopup(5)">
+                    <img class="gallery-image" src="Chopper.jpg" alt="Image 6" onclick="showPopup(6)">
+                    <img class="gallery-image" src="Jinbe.jpg" alt="Image 7" onclick="showPopup(7)">
+                    <img class="gallery-image" src="shanks -wp.jpg" alt="Image 8" onclick="showPopup(8)">
+                    <img class="gallery-image" src="Brook.jpg" alt="Image 9" onclick="showPopup(9)">
+                    <img class="gallery-image" src="Nico Robin.jpg" alt="Image 10" onclick="showPopup(10)">
+                    <img class="gallery-image" src="Franky.jpg" alt="Image 11" onclick="showPopup(11)">
+                    <img class="gallery-image" src="ace -wp.jpg" alt="Image 12" onclick="showPopup(12)">
+                    <img class="gallery-image" src="kaido -wp.jpg" alt="Image 13" onclick="showPopup(13)">
+                    <img class="gallery-image" src="gold roger -wp.jpg" alt="Image 14" onclick="showPopup(14)">
+                </div>
+            
+                <!-- Pop-up window -->
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <img id="popup-image" class="gallery-image" src="" alt="Pop-up Image">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <div id="popup-text">
+                            hiii
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        For more Info About the Character Click <a href="Project Map.html">Here</a>
+                    </p>
+                </div>
+            </main>
+            <footer>
+                The One Piece is Real
+            </footer>
+            <script>
+                function showPopup(imageNumber) {
+                    const popup = document.getElementById("popup");
+                    const popupImage = document.getElementById("popup-image");
+                    const popupText = document.getElementById("popup-text");
+        
+                    // Define image sources and content for each image
+                    const images = ["luffy- wp.jpg", "Roronoa Zoro.jpg","God Usopp.jpg","Vinsmoke Sanji.jpg","Nami.jpg","Chopper.jpg","Jinbe.jpg","shanks -wp.jpg","Brook.jpg","Nico Robin.jpg","Franky.jpg","ace -wp.jpg","kaido -wp.jpg","gold roger -wp.jpg"];
+                    const content = [
+                        "<strong>Monkey D Luffy</strong><br><br>&emsp; Bounty: 3,000,000,000 Berries<br>&emsp;Pirate Crew: Straw Hat Pirates<br>&emsp;Devil Fruit: Hito Hito no Mi, Model: Nika (Human-Human Fruit, Model: Nika)<br>&emsp;Haki: Armament, Observation, and Conqueror’s",
+                        "<strong>Roronoa Zoro</strong><br><br>&emsp; Bounty: 1,111,000,000 Berries<br>&emsp; Pirate Crew: Straw Hat Pirates<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Armament, Observation, and Conquerors",
+                        "<strong>God Usopp</strong><br><br>&emsp; Role: Sniper<br>&emsp; Crew Debut: Episode 17, Chapter 41<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Observation<br>&emsp; Bounty: 500,000,000 Berries",
+                        "<strong>Vinsmoke Sanji</strong><br><br>&emsp; Role: Cook<br>&emsp; Crew Debut: Episode 30, Chapter 68<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Armament, and Observation<br>&emsp; Bounty: 1,032,000,000 Berries",
+                        "<strong>Nami</strong><br><br>&emsp; Role: Navigator<br>&emsp; Crew Debut: Episode 43, Chapter 94<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 366,000,000 Berries",
+                        "<strong>Chopper</strong><br><br>&emsp; Role: Doctor<br>&emsp; Crew Debut: Episode 85, Chapter 153<br>&emsp; Devil Fruit: Hito Hito no Mi (Human-Human Fruit)<br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 1,000 Berries",
+                        "<strong>Jinbe</strong><br><br>&emsp; Role: Helmsman<br>&emsp; Crew Debut: Episode 980, Chapter 976<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Observation and Armament<br>&emsp; Bounty: 1,100,000,000 Berries",
+                        "<strong>Shanks</strong><br><br>&emsp; Bounty: 4,048,900,000 Berries<br>&emsp; Pirate Crew: Red Hair Pirates, Roger Pirates (Previously)<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Armament, Observation, and Conqueror's",
+                        "<strong>Brook</strong><br><br>&emsp; Roles: Musician, Swordsman<br>&emsp; Crew Debut: Episode 381, Chapter 489<br>&emsp; Devil Fruit: Yomi Yomi no Mi (Revive-Revive Fruit)<br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 383,000,000 Berries",
+                        "<strong>Nico Robin</strong><br><br>&emsp; Role: Archaeologist<br>&emsp; Crew Debut: Episode 130, Chapter 218<br>&emsp; Devil Fruit: Hana Hana no Mi (Flower-Flower Fruit)<br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 930,000,000 Berries",
+                        "<strong>Franky</strong><br><br>&emsp; Role: Shipwright<br>&emsp; Crew Debut: Episode 322, Chapter 437<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 394,000,000 Berries",
+                        "<strong>Portgas D. Ace</strong><br><br>&emsp; Role:  2nd division commander <br>&emsp; <br>&emsp; Devil Fruit:Mera Mera no Mi <br>&emsp; Haki: Unconfirmed<br>&emsp; Bounty: 550,000,000 Berries",
+                        "<strong>Kaido</strong><br><br>&emsp; Bounty: 4,611,100,000 Berries<br>&emsp; Pirate Crew: Beast Pirates, Rocks Pirates (Previously)<br>&emsp; Devil Fruit: Uo Uo no Mi, Model: Seiryu (Fish-Fish Fruit, Model: Azure Dragon)<br>&emsp; Haki: Armament, Observation, and Conqueror's",
+                        "<strong>Gol D Roger</strong><br><br>&emsp; Bounty: 5,564,800,000 Berries<br>&emsp; Pirate Crew: Roger Pirates<br>&emsp; Devil Fruit: None<br>&emsp; Haki: Armament, Observation, and Conqueror's"
+                    ];
+        
+                    popupImage.src = images[imageNumber - 1];
+                    popupText.innerHTML = content[imageNumber - 1];
+        
+                    // Show the pop-up window
+                    popup.style.display = "block";
+                }
+        
+                // Close the pop-up window when clicked outside the content
+                function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+                }
+            </script>
+            
+
+        </body>
+    </html>
