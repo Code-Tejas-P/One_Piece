@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'One Piece'; 
+    src: url('one piece font.ttf'); 
+}
+body{
+    background-image: url(/Resourses/bg.jpg);
+    background-size: cover;
+    font-family: 'One piece';
+    color: antiquewhite;
+}
+header.mainpage{
+    text-align: center;
+    text-shadow: black 2px;
+}
+h1.mainpage{
+    padding-top: 15%;
+    font-size: 110px;
+}
+.button{
+    position: fixed 10px;
+    background-color: #5D1511;
+    border: none;
+  color: antiquewhite;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px; 
+}
+.button:hover{
+    background-color: antiquewhite;
+    color: black;
+    font-size: 25px;
+}
+nav.mainpage{
+    padding-left: 20%;
+}
+nav a.mainpage {
+    padding: 50px;
+}
+#space {
+   color: antiquewhite;
+}
+header.home{
+    text-align: center;
+    text-shadow: black 2px;
+}
+h1.home{
+    padding-top: 10px;
+    font-size: 110px;
+}
+#home{
+    float: left;
+	width: 190px;
+    padding: 2%;
+}
+#home ul{
+    list-style-type: none
+}
+#home li{
+    padding-bottom:20px ;
+}
+#contents{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 250px;
+    margin-right: 150px;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20px;
+}
+#content{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 250px;
+    margin-right: 150px;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20px;
+}
+#contents img{
+    padding: 20px;
+    height:150px;
+    float: right; 
+        margin: 5px;
+    
+}
+#info{
+    color: antiquewhite;
+    font-size: 20px;
+}
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20%;
+    float: left;
+  }
+  footer{
+    margin-left: 250px;
+    padding: 20px;
+    margin-right: 150px;
+    background-color:#5D1511;
+    text-align: center;
+  }
+  .char{
+    width: 20%;
+    padding-top: 30px;
+    margin: 20px;
+    color: white;
+    border: 2px solid #5D1511;
+    text-align:center;
+    float:left;
+  }
+  .char img{
+    border: 2px solid #5D1511;
+  }
